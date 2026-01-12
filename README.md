@@ -1,3 +1,4 @@
+```mermaid
 %%{init: {'flowchart': {'curve': 'linear'}}}%%
 flowchart LR
     %% 왼쪽 그룹: 단말장치
@@ -37,3 +38,4 @@ flowchart LR
     style Terminals fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5
     style Computers fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5
     classDef default fill:#fff,stroke:#333,stroke-width:1px;
+```
