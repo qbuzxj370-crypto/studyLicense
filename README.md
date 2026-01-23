@@ -1,41 +1,27 @@
-```mermaid
-%%{init: {'flowchart': {'curve': 'linear'}}}%%
-flowchart LR
-    %% 왼쪽 그룹: 단말장치
-    subgraph Terminals ["단말장치"]
-        direction TB
-        D1[디지털]
-        D3[디지털]
-        A1[아날로그]
-    end
+# 1. 정보시스템 기반 기술
 
-    %% 중앙 장치들
-    M["전화선 (아날로그)<br/><font color='blue'>모뎀</font>"]
-    DSU["전용선 (디지털)<br/><font color='red'>DSU</font>"]
-    C["전용선 (디지털)<br/><font color='green'>코덱</font>"]
-    
-    
-    
-    %% 오른쪽 그룹: 컴퓨터
-    subgraph Computers ["컴퓨터"]
-        direction TB
-        D2[디지털]
-        D4[디지털]
-        A2[아날로그]
-    end
+## 01 응용 SW 기초 기술 활용
 
-    %% 연결 관계 (직선 유지를 위해 ---> 사용)
-    D1 ---> M ---> D2
-    D3 ---> DSU ---> D4
-    A1 ---> C ---> A2
+[운영체제 개론](%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EA%B0%9C%EB%A1%A0%20f86d516de6df407baf9bcaac8e696878.md)
 
-    %% 스타일 설정
-    linkStyle 0,1 stroke:blue,stroke-width:2px;
-    linkStyle 2,3 stroke:red,stroke-width:2px;
-    linkStyle 4,5 stroke:green,stroke-width:2px;
+[네트워크 개론](%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B0%9C%EB%A1%A0%207d68d3e4d10245d79daed24362aca12b.md)
 
-    %% 서브그래프 및 노드 스타일
-    style Terminals fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5
-    style Computers fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5
-    classDef default fill:#fff,stroke:#333,stroke-width:1px;
-```
+## 02 애플리케이션 설계
+
+[소프트웨어 공학과 생명주기](%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EA%B3%B5%ED%95%99%EA%B3%BC%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%2077c110194b984e789441225de02ecddc.md)
+
+[소프트웨어 개발 방법론](%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EA%B0%9C%EB%B0%9C%20%EB%B0%A9%EB%B2%95%EB%A1%A0%20ce289f47a6f84211a90fdf9a2455e5de.md)
+
+[요구 사항 공학과 분석 기법](%EC%9A%94%EA%B5%AC%20%EC%82%AC%ED%95%AD%20%EA%B3%B5%ED%95%99%EA%B3%BC%20%EB%B6%84%EC%84%9D%20%EA%B8%B0%EB%B2%95%20c9379517aff54d7e9e5466fb9c8303ff.md)
+
+[UML과 객체 지향 분석•설계](UML%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%EB%B6%84%EC%84%9D%E2%80%A2%EC%84%A4%EA%B3%84%202e8dce692ccc80019b25c27f745f0a0a.md)
+
+## 03 테스트 및 배포
+
+[소프트웨어 개발 환경과 테스트](%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%EA%B3%BC%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20bb333818a9284b7f87cac4c3e43142a9.md)
+
+[사용자 인터페이스 설계](%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20%EC%84%A4%EA%B3%84%202e8dce692ccc801dbd84e28f01a0a8bf.md)
+
+[형상 관리와 빌드 자동화](%ED%98%95%EC%83%81%20%EA%B4%80%EB%A6%AC%EC%99%80%20%EB%B9%8C%EB%93%9C%20%EC%9E%90%EB%8F%99%ED%99%94%202e8dce692ccc80688620cd15814c319e.md)
+
+[신기술 및 IT 트렌드](%EC%8B%A0%EA%B8%B0%EC%88%A0%20%EB%B0%8F%20IT%20%ED%8A%B8%EB%A0%8C%EB%93%9C%202e8dce692ccc807f8bd1e6c8c7949327.md)
